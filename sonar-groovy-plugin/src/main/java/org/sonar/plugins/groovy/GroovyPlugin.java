@@ -84,7 +84,7 @@ public class GroovyPlugin implements Plugin {
   public static final String SONAR_GROOVY_BINARIES_FALLBACK = "sonar.binaries";
 
   public static final String FILE_SUFFIXES_KEY = "sonar.groovy.file.suffixes";
-  public static final String DEFAULT_FILE_SUFFIXES = ".groovy";
+  public static final String DEFAULT_FILE_SUFFIXES = ".gs";
 
   @Override
   public void define(Context context) {

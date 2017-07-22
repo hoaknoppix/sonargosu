@@ -1,6 +1,6 @@
 <profile>
   <name>Sonar way</name>
-  <language>grvy</language>
+  <language>gosu</language>
   <rules>
     <rule>
       <repositoryKey>grvy</repositoryKey>

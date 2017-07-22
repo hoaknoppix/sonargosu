@@ -31,15 +31,15 @@ public class GroovyTest {
   public void test() {
     Settings settings = new Settings();
     Groovy language = new Groovy(settings);
-    assertThat(language.getKey()).isEqualTo("grvy");
-    assertThat(language.getName()).isEqualTo("Groovy");
-    assertThat(language.getFileSuffixes()).isEqualTo(new String[] {".groovy"});
+    assertThat(language.getKey()).isEqualTo("gosu");
+    assertThat(language.getName()).isEqualTo("Gosu");
+    assertThat(language.getFileSuffixes()).isEqualTo(new String[] {".gs"});
 
     settings.setProperty(GroovyPlugin.FILE_SUFFIXES_KEY, "");
-    assertThat(language.getFileSuffixes()).containsOnly(".groovy");
+    assertThat(language.getFileSuffixes()).containsOnly(".gs");
 
-    settings.setProperty(GroovyPlugin.FILE_SUFFIXES_KEY, ".groovy, .grvy");
-    assertThat(language.getFileSuffixes()).containsOnly(".groovy", ".grvy");
+    settings.setProperty(GroovyPlugin.FILE_SUFFIXES_KEY, ".gs, .gr");
+    assertThat(language.getFileSuffixes()).containsOnly(".gs", ".gr");
   }
 
 }
