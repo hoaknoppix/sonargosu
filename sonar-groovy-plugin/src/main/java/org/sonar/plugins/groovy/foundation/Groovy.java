@@ -28,7 +28,7 @@ import org.sonar.plugins.groovy.GroovyPlugin;
 
 public class Groovy extends AbstractLanguage {
 
-  public static final String KEY = "grvy";
+  public static final String KEY = "gosu";
 
   /**
    * Settings of the plugin.
@@ -39,7 +39,7 @@ public class Groovy extends AbstractLanguage {
    * Default constructor
    */
   public Groovy(Settings settings) {
-    super(KEY, "Groovy");
+    super(KEY, "Gosu");
     this.settings = settings;
   }
 
